@@ -1,1 +1,5 @@
-Questions | 
+Questions | Q1, Q2, Q3, Q4
+Macbook Pro | y,n,n,y
+Macbook Air | y,n,y,y
+Dell XPS 13 | n,n,y,n
+Razor Blade 14 | n,n,n,y
