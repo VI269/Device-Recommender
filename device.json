@@ -1,0 +1,10 @@
+{
+    "questions": ["Do you like macos?", "Do you care about security?", "Do you care about looks", "Do you care about performance?", "Do you care about battery?", "Do you care about portability?"],
+    "device": {
+        "Macbook Pro": ["y", "y", "y", "n", "y", "y"],
+        "Macbook Air": ["y", "y", "n", "n", "n", "y"],
+        "Dell XPS 13": ["n", "n", "y", "n", "n", "y"],
+        "Razor Blade 19": ["n", "n", "y", "y", "n", "n"],
+        "Razor Blade 20": ["n", "n", "y", "y", "n", "n"]
+    }
+}
