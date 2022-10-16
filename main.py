@@ -14,19 +14,11 @@ def remove_new_lines(array):
     return out
 
 def process(questionnaire_results, file):
-    with open(file) as f:
-        outs = []
-        questions = remove_new_lines(f.readlines()[1:])
-        for _ in questions:
-            for exp in _.split(" | ")[1].split(","):
-                for response in questionnaire_results:
-                    if exp == response:
-                        outs.append(_.split(' | ')[0])
-        if len(outs) == 0:
-            matches = {}
-            for _ in questions:
-                for exp in _.split(" | ")[1].split(","):
-                    
+    with open(file, 'r') as f:
+        for line in f.readlines():
+            for name in line.split(' | '):
+                if name[1].split(',') == questionnaire_results:
+                    return name
 
 if __name__ == '__main__':
-    print(process("", "device.txt"))
+    print(process(["y", "n", "n", "y"], "device.txt"))
